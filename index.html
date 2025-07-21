@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayan Manna - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    .hero iframe {
+      display: none;
+    }
+    #scrollTop {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 188, 212, 0.7);
+      border: none;
+      color: #fff;
+      padding: 12px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo" style="color: #00bcd4;">Ayan Manna</div>
+      <ul class="nav-links">
+        <li><a href="#about" style="color: #00bcd4;">About</a></li>
+        <li><a href="#skills" style="color: #00bcd4;">Skills</a></li>
+        <li><a href="#interests" style="color: #00bcd4;">Interests</a></li>
+        <li><a href="#projects" style="color: #00bcd4;">Projects</a></li>
+        <li><a href="#contact" style="color: #00bcd4;">Contact</a></li>
+        <li><button id="darkToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <div class="hero-heading glow">
+      <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+    </div>
+    <div class="floating-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" style="left: 10%; animation-delay: 0s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" style="left: 30%; animation-delay: 2s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" style="left: 50%; animation-delay: 4s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" style="left: 70%; animation-delay: 6s;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" style="left: 90%; animation-delay: 8s;">
+    </div>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a 3rd year B.Tech Computer Science Engineering (Core) student with a strong passion for building intelligent systems.
+        Currently, I’m working on a project called <strong>"Automated Chess Board"</strong>, designed for differently-abled individuals and chess lovers alike.
+        I love merging hardware and software to create meaningful, interactive experiences.
+        With solid skills in frontend development and a foundation in systems-level programming, I enjoy solving problems that require both logic and creativity.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS (UI Design)</li>
+        <li>Java & C++ (Object-Oriented Programming)</li>
+        <li>JavaScript</li>
+        <li>Computer Fundamentals (Diploma in Computer Application)</li>
+      </ul>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Playing Football and Badminton</li>
+        <li>Online Competitive Gaming</li>
+        <li>Guitar Playing & Music Composition</li>
+        <li>Exploring New Places (Tech & Travel)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+          <h3>SIP Calculator</h3>
+	  <p> SIP Calculator helps you plan your investments smartly. Enter your investment amount, duration, and choose options like SIP, SWP, Lumpsum, or Step-up/Step-down investments. 	  It even adjusts for inflation! A cool donut chart visually shows your total investment vs returns, with time displayed at the center.</p>
+          <h3>Automated Chess Board</h3>
+          <p>A voice-controlled chessboard where pieces move automatically using stepper motors,raspberry pi and sensors.
+          Designed for accessibility — especially for players with limited mobility — this project connects to a digital platform for remote multiplayer interaction.</p>
+          <a href="https://github.com/AyanManna10" target="_blank" style="color: #00bcd4;">View on GitHub</a>     
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ayan-manna-474b28298" target="_blank" style="color: #00bcd4;">LinkedIn</a>
+      <a href="https://github.com/AyanManna10" target="_blank" style="color: #00bcd4;">GitHub</a>
+      <a href="mailto:amanna98300@gmail.com" style="color: #00bcd4;">amanna98300@gmail.com</a>
+      <a href="resume.pdf" download class="download-btn" style="color: #00bcd4;">Download Resume</a>
+    </div>
+    <p>&copy; 2025 Ayan Manna. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTop">⬆</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
